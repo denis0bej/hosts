@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "this is modified"
 cat /etc/hosts | while read ip dom
 do
 	if [ "$dom" != localhost ] && [[ ! $dom == *`hostname`* ]] && [ -n "$dom" ]; then
